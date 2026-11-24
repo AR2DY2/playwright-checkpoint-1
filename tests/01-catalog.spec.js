@@ -5,28 +5,28 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/');
 });
 
-test('[1] search', async ({ page }) => {
+test('Задание 1', async ({ page }) => {
   const model = new CatalogPage(page);
   // BEGIN
   await model.search('Red Lipstick');
   // END
 });
 
-test('[2] selectBrand', async ({ page }) => {
+test('Задание 2', async ({ page }) => {
   const model = new CatalogPage(page);
   // BEGIN
   await model.selectBrand('Essence');
   // END
 });
 
-test('[3] openProduct', async ({ page }) => {
+test('Задание 3', async ({ page }) => {
   const model = new CatalogPage(page);
   // BEGIN
   await model.openProduct('Red Lipstick');
   // END
 });
 
-test('[4] nextPage', async ({ page }) => {
+test('Задание 4', async ({ page }) => {
   const model = new CatalogPage(page);
   // BEGIN
   await model.nextPage();
